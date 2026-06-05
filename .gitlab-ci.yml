@@ -24,7 +24,24 @@ workflow:
       when: never
     - if: $CI_COMMIT_BRANCH
       when: always
+variables:
+  HEROKU_APP_NAME: suspense-investigation
 
+set_heroku_build_config:
+  stage: .pre
+  image: curlimages/curl:latest
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  script:
+    - |
+      curl --fail --request PATCH "https://api.heroku.com/apps/${HEROKU_APP_NAME}/config-vars" \
+        --header "Content-Type: application/json" \
+        --header "Accept: application/vnd.heroku+json; version=3" \
+        --header "Authorization: Bearer ${HEROKU_API_KEY}" \
+        --data "{
+          \"NPM_TOKEN\": \"${NPM_TOKEN}\",
+          \"USE_NPM_INSTALL\": \"false\"
+        }"
 include:
   - project: dwp/engineering/pipeline-solutions/gitlab/functions
     ref: 7.0.5
