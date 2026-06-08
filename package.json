@@ -1,4 +1,5 @@
 {
+  "name": "govuk-prototype-kit",
   "engines": {
     "node": "22.x",
     "npm": "10.x"
