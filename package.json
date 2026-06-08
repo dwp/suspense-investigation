@@ -4,8 +4,7 @@
     "npm": "10.x"
   },
   "scripts": {
-    "heroku-prebuild": "npm config set @dwp-govuk:registry https://gitlab.com/api/v4/projects/82735932/packages/npm/ && npm config set //gitlab.com/api/v4/projects/82735932/packages/npm/:_authToken ${NPM_TOKEN} && npm config set @dwp:registry https://registry.npmjs.org/",  
-    "dev": "govuk-prototype-kit dev",
+"heroku-prebuild": "npm config set @dwp-govuk:registry https://gitlab.com/api/v4/projects/82735932/packages/npm/ && npm config set //gitlab.com/api/v4/projects/82735932/packages/npm/:_authToken ${NPM_TOKEN} && npm config set @dwp:registry https://registry.npmjs.org/"    "dev": "govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
     "start": "govuk-prototype-kit start"
   },
@@ -15,7 +14,7 @@
     "body-parser": "2.2.2",
     "express": "5.2.1",
     "govuk-frontend": "6.1.0",
-    "govuk-prototype-kit": "npm:@dwp-govuk/govuk-prototype-kit@13.20.2",
+    "govuk-prototype-kit": "13.20.2",
     "immutable": "^4.0.0",
     "qs": "6.15.2"
   },
