@@ -26,7 +26,8 @@ workflow:
       when: always
 
 variables:
-  HEROKU_APP_NAME: prototype-changes
+  HEROKU_APP_NAME: suspense-investigation
+  NPM_TOKEN: ${NPM_TOKEN} 
 
 set_heroku_build_config:
   stage: .pre
