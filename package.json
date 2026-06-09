@@ -1,18 +1,16 @@
 {
-  "name": "govuk-prototype-kit",
+  "name": "suspense-investigation",
   "engines": {
     "node": "22.22.3",
     "npm": "10.9.8"
   },
   "scripts": {
-    "heroku-prebuild": "npm config set @dwp-govuk:registry https://gitlab.com/api/v4/projects/82735932/packages/npm/ && npm config set //gitlab.com/api/v4/projects/82735932/packages/npm/:_authToken $NPM_TOKEN",
-    "dev": "govuk-prototype-kit dev",
+  "heroku-prebuild": "npm config set @dwp-govuk:registry https://gitlab.com/api/v4/projects/82735932/packages/npm/ --location=project && npm config set //gitlab.com/api/v4/projects/82735932/packages/npm/:_authToken $NPM_TOKEN --location=project",    "dev": "govuk-prototype-kit dev",
     "serve": "govuk-prototype-kit serve",
     "start": "govuk-prototype-kit start"
   },
   "dependencies": {
-
-  "govuk-prototype-kit": "npm:@dwp-govuk/govuk-prototype-kit@13.20.2",
+    "govuk-prototype-kit": "npm:@dwp-govuk/govuk-prototype-kit@13.20.2",
     "@dwp/dwp-frontend": "4.1.0",
     "@govuk-prototype-kit/common-templates": "3.0.0",
     "body-parser": "2.2.2",
