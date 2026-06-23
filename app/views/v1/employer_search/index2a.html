@@ -1,0 +1,280 @@
+{% extends "/layouts/layout-sis.html" %}
+
+{% block pageTitle %}
+  Customer search results – Suspense investigation – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">
+        Employer search results
+      </h1>
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+<div class="moj-filter-layout">
+  <div class="moj-filter-layout__filter">
+    <div class="moj-filter" data-module="moj-filter">
+      <div class="moj-filter__header">
+        <div class="moj-filter__header-title">
+          <h2 class="govuk-heading-m">Filter</h2>
+        </div>
+        <div class="moj-filter__header-action">
+        </div>
+      </div>
+      <div class="moj-filter__content">
+          
+        <div class="moj-filter__options">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              First name
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Last name
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+          
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              National Insurance number
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Employer
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+           <hr>
+
+           <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Employer postcode
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+           <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Employer staff reference
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <br>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              VRA balance
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <br>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Apply filters
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ </div>
+  <!-- <div class="moj-filter-layout__content">
+    <div class="moj-action-bar">
+      <div class="moj-action-bar__filter"></div>
+      <div class="moj-button-menu" data-module="moj-button-menu">
+        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary govuk-button--secondary" data-module="govuk-button">
+          Action 1
+        </button>
+        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary govuk-button--secondary" data-module="govuk-button">
+          Action 2
+        </button>
+      </div>
+    </div> -->
+
+    <div class="govuk-grid-column-two-thirds">
+
+      <p><strong>1 customer record</strong> </p>
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+ <div class="govuk-summary-card">
+  <div class="govuk-summary-card__title-wrapper" style="padding-bottom: 0px;">
+    <div class="govuk-form-group">
+    <h2 class="govuk-summary-card__title">
+       Theresa Morris
+    </h2>
+    </div>
+</div>
+    
+  <div class="govuk-summary-card__content">
+
+    <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          National Insurance number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          AB000000017A
+        </dd>
+        
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Router account number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          812500021
+        </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Current employers
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <ul class="govuk-list">
+          <li>
+            Top Tesco Stores
+          </li>
+          <li>
+            Address: 7947 Stanley Road, Inverness, IV44 7MR
+          </li>
+          <li>
+            Staff reference: 12466765
+          </li>
+        </ul>
+
+        <hr>
+
+         <ul class="govuk-list">
+          <li>
+            Tapi
+          </li>
+          <li>
+            Address: 8833 Church Lane, Stoke-on-Trent, ST80 6OZ
+          </li>
+          <li>
+            Staff reference: 9893
+          </li>
+        </ul>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Previous employers
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <ul class="govuk-list">
+            <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Stanley LTD
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <li>
+            Address: 73 The Avenue, Darlington, DL26 9QO
+          </li>
+          <li>
+            Staff reference: 0923093
+          </li>
+  </div>
+</details>
+
+         <ul class="govuk-list">
+
+          <details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Vikor Rolf
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+     <li>
+                Address: 8366 The Green, Stevenage, SG82 8TP
+
+          </li>
+          <li>
+            Staff reference: 89764
+          </li>
+
+  </div>
+</details>
+
+          
+        </dd>
+        
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Amount outstanding
+        </dt>
+        <dd class="govuk-summary-list__value">
+          £4000
+        </dd>
+        
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Individual balance
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>£222 (Adult Disability)</li>
+            <li>£1800 (Winter Fuel Payments)</li>
+            <li>£1978 (Carer)</li>
+          </ul>
+        </dd>
+        
+      </div>
+    
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+      
+
+
+  </div>
+
+{% endblock %}
