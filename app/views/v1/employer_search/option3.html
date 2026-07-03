@@ -53,10 +53,10 @@
           </div>
 
           <hr>
-          
+
           <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="keywords">
-              National Insurance number
+              NINO
             </label>
             <input class="govuk-input" id="keywords" name="keywords" type="text">
           </div>
@@ -88,16 +88,52 @@
             <input class="govuk-input" id="keywords" name="keywords" type="text">
           </div>
 
-          <br>
+          <hr>
 
           <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="keywords">
               VRA balance
             </label>
-            <input class="govuk-input" id="keywords" name="keywords" type="text">
+            <div class="govuk-input__wrapper">
+              <div class="govuk-input__prefix" aria-hidden="true">£</div>
+              <input class="govuk-input govuk-input--width-10" id="currency" name="currency" type="text" spellcheck="false" aria-describedby="currency-hint">
+            </div>
           </div>
 
+          <hr>
+
+           <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Router type
+            </label>
+            <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1">
+              <label class="govuk-label govuk-checkboxes__label" for="type">
+                DEA (18)
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1">
+              <label class="govuk-label govuk-checkboxes__label" for="type">
+                OTP (5)
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1">
+              <label class="govuk-label govuk-checkboxes__label" for="type">
+                XTP (3)
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1">
+              <label class="govuk-label govuk-checkboxes__label" for="type">
+                OBR (0)
+              </label>
+            </div>
           <br>
+          </div>
+          </div>
 
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Apply filters
@@ -132,17 +168,17 @@
   <div class="govuk-summary-card__title-wrapper" style="padding-bottom: 0px;">
     <div class="govuk-form-group">
     <h2 class="govuk-summary-card__title">
-       Theresa Morris
+       Theresa Morris (DEA)
     </h2>
     </div>
 </div>
-    
+      
   <div class="govuk-summary-card__content">
 
     <dl class="govuk-summary-list">
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          National Insurance number
+          NINO
         </dt>
         <dd class="govuk-summary-list__value">
           AB000000017A
@@ -160,70 +196,43 @@
 
         <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Current employers
+          Current employer
         </dt>
         <dd class="govuk-summary-list__value">
-          <ul class="govuk-list">
-          <li>
             Top Tesco Stores
-          </li>
-          <li>
-            Address: 7947 Stanley Road, Inverness, IV44 7MR
-          </li>
-          <li>
-            Staff reference: 12466765
-          </li>
-        </ul>
-
-        <hr>
-
-         <ul class="govuk-list">
-          <li>
-            Tapi
-          </li>
-          <li>
-            Address: 8833 Church Lane, Stoke-on-Trent, ST80 6OZ
-          </li>
-          <li>
-            Staff reference: 9893
-          </li>
-        </ul>
+            <br>
+             7947 Stanley Road, Inverness, IV44 7MR
+        
         </dd>
       </div>
 
       <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
-          Previous employers
+          Previous employee staff reference
         </dt>
-
-          <dd class="govuk-summary-list__value">
-          <ul class="govuk-list">
-          <li>
-           Stanley LTD
-          </li>
-          <li>
-            Address: 73 The Avenue, Darlington, DL26 9QO
-          </li>
-          <li>
-            Staff reference: 0923093
-          </li>
-        </ul>
-
-        <hr>
-
-         <ul class="govuk-list">
-          <li>
-            Vikor Rolf
-          </li>
-          <li>
-            Address: 8366 The Green, Stevenage, SG82 8TP
-          </li>
-          <li>
-            Staff reference: 89764
-          </li>
-        </ul>
+        <dd class="govuk-summary-list__value">
+            886756453
         </dd>
-        
+      </div>
+
+       <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Current employer
+        </dt>
+        <dd class="govuk-summary-list__value">
+            Tapi
+            <br>
+             The Avenue, Darlington, DL26 9QO
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Previous employee staff reference
+        </dt>
+        <dd class="govuk-summary-list__value">
+            1345678743
+        </dd>
       </div>
 
       <div class="govuk-summary-list__row">
@@ -241,9 +250,9 @@
         </dt>
         <dd class="govuk-summary-list__value">
           <ul class="govuk-list govuk-list--bullet">
-            <li>£222 (Adult Disability)</li>
-            <li>£1800 (Winter Fuel Payments)</li>
-            <li>£1978 (Carer)</li>
+            <li>£222 (Adult Disability) 5645646</li>
+            <li>£1800 (Winter Fuel Payments) 7675546</li>
+            <li>£1978 (Carer) 24354543</li>
           </ul>
         </dd>
         
