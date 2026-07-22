@@ -1,0 +1,41 @@
+{% extends "/layouts/layout-sis.html" %}
+
+{% block pageTitle %}
+  Correspondent search – Suspense investigation – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">
+        Correspondent search
+      </h1>
+
+    <div class="govuk-form-group">
+    <label class="govuk-label" for="one-half">
+        Correspondent name
+    </label>
+    <input class="govuk-input govuk-!-width-one-half" id="one-half" name="oneHalf" type="text">
+    </div>
+
+    <a href="../results/index.html">
+    <button type="submit" class="govuk-button" data-module="govuk-button">
+        Search
+    </button>
+    </a>
+
+    
+</div>
+
+</div>
+
+{% endblock %}
