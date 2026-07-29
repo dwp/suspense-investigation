@@ -1,0 +1,265 @@
+{% extends "/layouts/layout-sis.html" %}
+
+{% block pageTitle %}
+  Customer search results – Suspense investigation – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-l">
+        Customer search results
+      </h1>
+
+      <br>
+
+      <p>Your search:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>NINO: <strong>AB000000017A</strong></li>
+      </ul>
+
+      <p><a href="#">Change search</a></p>
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+<div class="moj-filter-layout">
+  <div class="moj-filter-layout__filter">
+    <div class="moj-filter" data-module="moj-filter">
+      <div class="moj-filter__header">
+        <div class="moj-filter__header-title">
+          <h2 class="govuk-heading-m">Filter</h2>
+        </div>
+        <div class="moj-filter__header-action">
+        </div>
+      </div>
+      <div class="moj-filter__content">
+          
+        <div class="moj-filter__options">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              First name
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Last name
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              NINO
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Employer
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+           <hr>
+
+           <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Employer postcode
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+           <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Employer staff reference
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              VRA balance
+            </label>
+            <div class="govuk-input__wrapper">
+              <div class="govuk-input__prefix" aria-hidden="true">£</div>
+              <input class="govuk-input govuk-input--width-10" id="currency" name="currency" type="text" spellcheck="false" aria-describedby="currency-hint">
+            </div>
+          </div>
+
+          <div class="govuk-button-group">
+            <button type="submit" class="govuk-button" data-module="govuk-button">
+              Apply filters
+            </button>
+            <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Download to CSV button
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ </div>
+  <!-- <div class="moj-filter-layout__content">
+    <div class="moj-action-bar">
+      <div class="moj-action-bar__filter"></div>
+      <div class="moj-button-menu" data-module="moj-button-menu">
+        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary govuk-button--secondary" data-module="govuk-button">
+          Action 1
+        </button>
+        <button type="submit" class="govuk-button moj-button-menu__item govuk-button--secondary govuk-button--secondary" data-module="govuk-button">
+          Action 2
+        </button>
+      </div>
+    </div> -->
+
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+        <p><strong>1 customer record</strong></p>
+
+
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+ <div class="govuk-summary-card">
+  <div class="govuk-summary-card__title-wrapper" style="padding-bottom: 0px;">
+    <div class="govuk-form-group">
+    <h2 class="govuk-summary-card__title">
+       Theresa Morris (DEA)
+    </h2>
+    </div>
+</div>
+      
+  <div class="govuk-summary-card__content">
+
+    <dl class="govuk-summary-list">
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          NINO
+        </dt>
+        <dd class="govuk-summary-list__value">
+          AB000000017A
+        </dd>
+        
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Customer account number
+        </dt>
+        <dd class="govuk-summary-list__value">
+          812500021
+        </dd>
+        </div>
+
+        <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Current employer
+        </dt>
+        <dd class="govuk-summary-list__value">
+            Top Tesco Stores
+            <br>
+             7947 Stanley Road, Inverness, IV44 7MR
+        
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Previous employee staff reference
+        </dt>
+        <dd class="govuk-summary-list__value">
+            886756453
+        </dd>
+      </div>
+
+       <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Current employer
+        </dt>
+        <dd class="govuk-summary-list__value">
+            Tapi
+            <br>
+             The Avenue, Darlington, DL26 9QO
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Previous employee staff reference
+        </dt>
+        <dd class="govuk-summary-list__value">
+            1345678743
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Amount outstanding
+        </dt>
+        <dd class="govuk-summary-list__value">
+          £4000
+        </dd>
+        
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Individual balance
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <ul class="govuk-list govuk-list--bullet">
+            <li>£222 (Adult Disability) 5645646</li>
+            <li>£1800 (Winter Fuel Payments) 7675546</li>
+            <li>£1978 (Carer) 24354543</li>
+          </ul>
+        </dd>
+        
+      </div>
+    
+</div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+      
+
+
+  </div>
+
+{% endblock %}
