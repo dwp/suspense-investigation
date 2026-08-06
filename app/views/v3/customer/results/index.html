@@ -67,6 +67,36 @@
 
           <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="keywords">
+              NINO
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Account number
+            </label>
+            <!-- <div id="waste-hint" class="govuk-hint">
+                Filter by customer or debt account number
+            </div> -->
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Address
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
               Journey type
             </label>
             {{ xGovukAutocomplete({
@@ -106,13 +136,13 @@
     { text: "XTP" }
   ]
 }) }}
-          </div>
+          </div>          
 
           <hr>
-          
+
           <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="keywords">
-              NINO
+              Benefit type
             </label>
             <input class="govuk-input" id="keywords" name="keywords" type="text">
           </div>
@@ -135,7 +165,9 @@
             <input class="govuk-input" id="keywords" name="keywords" type="text">
           </div>
 
-          <hr>
+          <br>
+
+          <!-- <hr>
 
            <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="keywords">
@@ -144,9 +176,9 @@
             <input class="govuk-input" id="keywords" name="keywords" type="text">
           </div>
 
-          <hr>
+          <hr> -->
 
-          <div class="govuk-form-group">
+          <!-- <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="keywords">
               Customer balance
             </label>
@@ -156,7 +188,25 @@
             </div>
           </div>
 
-          <br>
+          <br> -->
+
+          <!-- <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                Debt account information
+              </legend>
+              <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1" checked>
+                  <label class="govuk-label govuk-checkboxes__label" for="type">
+                    Hide
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <br> -->
 
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Apply filters
