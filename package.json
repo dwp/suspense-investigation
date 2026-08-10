@@ -15,7 +15,7 @@
     "@govuk-prototype-kit/common-templates": "3.0.0",
     "@ministryofjustice/frontend": "^9.0.0",
     "@x-govuk/govuk-prototype-components": "^6.0.0",
-    "body-parser": "2.2.2",
+    "body-parser": "2.3.0",
     "express": "5.2.1",
     "govuk-frontend": "^6.2.0",
     "govuk-prototype-kit": "npm:@dwp-govuk/govuk-prototype-kit@latest",
