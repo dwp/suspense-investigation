@@ -17,7 +17,7 @@
     "body-parser": "2.3.0",
     "express": "5.2.1",
     "govuk-frontend": "^6.2.0",
-    "govuk-prototype-kit": "npm:@dwp-govuk/govuk-prototype-kit@latest",
+    "govuk-prototype-kit": "13.20.2",
     "immutable": "^5.1.6",
     "moment": "^2.30.1"
   },
