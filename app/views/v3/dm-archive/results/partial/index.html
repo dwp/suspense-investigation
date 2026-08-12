@@ -93,6 +93,32 @@
             <input class="govuk-input" id="keywords" name="keywords" type="text">
           </div>
 
+          <hr>
+
+          <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+            Location status
+          </legend>
+          <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1">
+              <label class="govuk-label govuk-checkboxes__label" for="type">
+                UK (2)
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="type-2" name="type" type="checkbox" value="2">
+              <label class="govuk-label govuk-checkboxes__label" for="type-2">
+                International (1)
+              </label>
+            </div>
+            
+          </div>
+        </fieldset>
+      </div>
+
+
           <br>
 
           <button type="submit" class="govuk-button" data-module="govuk-button">
@@ -108,9 +134,13 @@
 
     <div class="govuk-grid-column-two-thirds">
 
- <p><strong>3 customer record</strong> <a href="/documents/sample.csv" download="data.csv" style="float: right">
+ <p><strong>3 customer records</strong> 
+  
+  <!-- <a href="/documents/sample.csv" download="data.csv" style="float: right">
            Download to Excel
-        </a></p>
+        </a> -->
+      
+      </p>
         
         <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
@@ -127,8 +157,6 @@
     </p>
     
     </div>
-
-    <!-- NEED TO ADD NINO -->
 
     <ul class="govuk-summary-card__actions" style="padding-bottom: 0;">
       <li class="govuk-summary-card__action" style="padding-bottom: 0;">
