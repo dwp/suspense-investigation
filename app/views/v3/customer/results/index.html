@@ -26,7 +26,7 @@
         <li>First names: <strong>James Paul</strong></li>
       </ul>
 
-      <p><a href="../search/index.html">Change search</a></p>
+      <p><a href="../search/index-3">Change search</a></p>
 
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
@@ -46,6 +46,25 @@
       <div class="moj-filter__content">
           
         <div class="moj-filter__options">
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Employer name
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+           <hr>
+
+           <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--s" for="keywords">
+              Employer postcode
+            </label>
+            <input class="govuk-input" id="keywords" name="keywords" type="text">
+          </div>
+
+          <hr>
+
 
           <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="keywords">
@@ -264,67 +283,31 @@
   ]
 }) }}
           </div>
-
+          
           <hr>
-
-          <div class="govuk-form-group">
-            <label class="govuk-label govuk-label--s" for="keywords">
-              Employer name
-            </label>
-            <input class="govuk-input" id="keywords" name="keywords" type="text">
-          </div>
-
-           <hr>
 
            <div class="govuk-form-group">
             <label class="govuk-label govuk-label--s" for="keywords">
-              Employer postcode
+              Debt account information
             </label>
-            <input class="govuk-input" id="keywords" name="keywords" type="text">
+            <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changedName" name="changedName" type="radio" value="month" checked>
+              <label class="govuk-label govuk-radios__label" for="changedName">
+                Include
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changedName-2" name="changedName" type="radio" value="year">
+              <label class="govuk-label govuk-radios__label" for="changedName-2">
+                Exclude
+              </label>
+            </div>
+          </div>
           </div>
 
           <br>
 
-          <!-- <hr>
-
-           <div class="govuk-form-group">
-            <label class="govuk-label govuk-label--s" for="keywords">
-              Employee staff reference
-            </label>
-            <input class="govuk-input" id="keywords" name="keywords" type="text">
-          </div>
-
-          <hr> -->
-
-          <!-- <div class="govuk-form-group">
-            <label class="govuk-label govuk-label--s" for="keywords">
-              Customer balance
-            </label>
-            <div class="govuk-input__wrapper">
-              <div class="govuk-input__prefix" aria-hidden="true">£</div>
-              <input class="govuk-input govuk-input--width-10" id="currency" name="currency" type="text" spellcheck="false" aria-describedby="currency-hint">
-            </div>
-          </div>
-
-          <br> -->
-
-          <!-- <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                Debt account information
-              </legend>
-              <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="type" name="type" type="checkbox" value="1" checked>
-                  <label class="govuk-label govuk-checkboxes__label" for="type">
-                    Hide
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-
-          <br> -->
 
           <button type="submit" class="govuk-button" data-module="govuk-button">
             Apply filters
@@ -438,7 +421,7 @@
         </dd>
         
       </div>
-      <div class="govuk-summary-list__row">
+      <!-- <div class="govuk-summary-list__row">
         <dt class="govuk-summary-list__key">
           Debt account information
         </dt>
@@ -450,7 +433,7 @@
         </ul>
         </dd>
         
-      </div>
+      </div> -->
     
 </div>
 </div>
